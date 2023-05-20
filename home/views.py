@@ -12,7 +12,7 @@ def test(request):
 
 def index(request):
     return HttpResponse('Index')
-
+ 
 @login_required(login_url='/admin')
 def authorized(request):
     return render(request, 'home/authorized.html',{})

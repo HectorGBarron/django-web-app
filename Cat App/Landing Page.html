@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>New Event</h1>
+
+<div id="form_left">
+    {% if form_left %}
+        {{ form_left|crispy }}
+    {% endif %}
+</div>
+
+<div id="form_right">
+    {% if form_right %}
+        {{ form_right|crispy }}
+    {% endif %}
+</div>
+
+{% endblock %}
